@@ -5,11 +5,11 @@ class Movie < ActiveRecord::Base
   end
   
   def self.same_director(id)
-    director = self.where(:id => id).select(:director).map{|c| c.director}[0].to_s
-    if director.length > 0
-      self.where(:director => director)
-    else
+    d = self.find(id, :select => "director")
+    if d.director == nil || d.director.length == 0
       []
+    else
+      self.where(:director => d.director)
     end
   end
 end

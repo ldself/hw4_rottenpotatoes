@@ -1,0 +1,23 @@
+# spec/fixtures/movies.yml
+
+star_wars_movie:
+  id: 1
+  title: Star Wars
+  rating: PG
+  director: George Lucas
+  release_date: 1977-05-25
+  
+THX_movie:
+  id: 2
+  title: THX-1138
+  rating: R
+  director: George Lucas
+  release_date: 1971-03-11
+
+alien_movie:
+  id: 3
+  title: Alien
+  rating: R
+  director:  
+  release_date: 1979-05-25
+
